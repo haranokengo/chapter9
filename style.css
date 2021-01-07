@@ -6,7 +6,7 @@
 
 header {
   height: 50px;
-  background-color: #FF9A4B;
+  background-color: #ff9a4b;
 }
 
 main {
@@ -20,10 +20,10 @@ main {
   margin-right: 30px;
   padding: 10px;
   position: relative;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
-.list:nth-last-child {
+.list:last-child {
   margin-right: 0;
 }
 
@@ -52,8 +52,8 @@ main {
   padding: 3px;
   position: absolute;
   top: 0;
-  left: o;
-  background-color: #FF9A4B;
+  left: 0;
+  background-color: #ff9a4b;
   color: #fff;
 }
 
@@ -63,5 +63,29 @@ main {
 
 footer {
   height: 50px;
-  background-color: #AAAAAA;
+  background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .list {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .list:last-child {
+    margin: 20px auto;
+  }
+
+  footer {
+    width: 100%;
+  }
 }
